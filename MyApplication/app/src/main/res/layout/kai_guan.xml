@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:background="@drawable/shape"
+        android:id="@+id/pm"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:ems="12"
+        android:gravity="center"
+        android:textSize="25sp"
+
+        android:hint="PM2.5
+                        光照强度"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+         />
+    <!--
+    <TextView
+        android:id="@+id/sun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:ems="12"
+        android:height="150sp"
+        android:weight="50sp"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:hint="光照强度"
+        android:layout_alignTop="@+id/tem2"
+        android:layout_alignLeft="@+id/pm"
+        android:layout_alignStart="@+id/pm"
+        android:layout_marginTop="19dp" />
+        -->
+    <TextView
+        android:id="@+id/tem1"
+        android:layout_width="200sp"
+        android:layout_height="120sp"
+        android:ems="12"
+        android:gravity="center"
+        android:drawableTop="@mipmap/tem"
+        android:textSize="25sp"
+        android:textColor="#80ccff"
+        android:hint="空气温度"
+        android:background="@drawable/fang"
+        android:layout_above="@+id/pm"
+        android:layout_toLeftOf="@+id/pm"
+        android:layout_toStartOf="@+id/pm" />
+
+    <TextView
+        android:background="@drawable/fang"
+        android:id="@+id/tem2"
+        android:layout_width="200sp"
+        android:layout_height="120sp"
+        android:ems="12"
+        android:gravity="center"
+        android:drawableTop="@mipmap/wet"
+        android:textSize="25sp"
+        android:textColor="#80ccff"
+        android:hint="空气湿度"
+        android:layout_above="@+id/pm"
+        android:layout_toRightOf="@+id/pm"
+        android:layout_toEndOf="@+id/pm" />
+
+    <TextView
+        android:id="@+id/soil1"
+        android:layout_width="200sp"
+        android:layout_height="120sp"
+        android:ems="12"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="#80ccff"
+        android:hint="土壤温度"
+        android:background="@drawable/fang"
+        android:layout_below="@+id/pm"
+        android:layout_toRightOf="@+id/pm"
+        android:layout_toEndOf="@+id/pm"
+        android:drawableTop="@mipmap/tem"/>
+
+    <TextView
+        android:id="@+id/soil2"
+        android:layout_width="200sp"
+        android:layout_height="120sp"
+
+        android:ems="12"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="#80ccff"
+        android:hint="土壤湿度"
+        android:background="@drawable/fang"
+        android:layout_below="@+id/pm"
+        android:layout_toLeftOf="@+id/pm"
+        android:layout_toStartOf="@+id/pm"
+        android:drawableTop="@mipmap/wet"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+    </LinearLayout>
+</RelativeLayout>

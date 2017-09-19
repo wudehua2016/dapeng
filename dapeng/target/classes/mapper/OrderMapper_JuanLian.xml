@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+ 
+ 
+ 
+ <mapper namespace="com.daogukeji.dapeng.dao.OrderDAO_JuanLian">
+ 	
+ 	<insert id="addOrder_JuanLian" parameterType="com.daogukeji.dapeng.entity.Dapeng_1_Order_JuanLian">
+ 		INSERT INTO dapeng_1_order_juanlian (
+ 									juanlian
+ 								)
+ 					VALUES(#{juanlian})
+ 	</insert>
+ 	
+ 	<select id="findOrder_JuanLian" resultType="com.daogukeji.dapeng.entity.Dapeng_1_Order_JuanLian">
+ 		SELECT * FROM dapeng_1_order_juanlian WHERE id = (SELECT MAX(id) FROM dapeng_1_order_juanlian)
+ 	</select>
+ </mapper>

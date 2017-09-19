@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.daogukeji.dapeng">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="智能大棚终端"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name=".service.Controller"/><!-- 主界面控制器服务 -->
+        <service android:name=".service.PaiFengIntentService_open"/>
+        <service android:name=".service.PaiFengIntentService_close"/>
+        <service android:name=".service.BuGuangIntentService_open"/>
+        <service android:name=".service.BuGuangIntentService_close"/>
+        <service android:name=".service.ChuShiIntentService_open"/>
+        <service android:name=".service.ChuShiIntentService_close"/>
+        <service android:name=".service.GuanGaiIntentService_open"/><!-- 开启灌溉服务 -->
+        <service android:name=".service.GuanGaiIntentService_close"/><!-- 关闭灌溉服务 -->
+        <service android:name=".service.ShiFeiIntentService_open"/>
+        <service android:name=".service.ShiFeiIntentService_close"/>
+
+    </application>
+
+</manifest>

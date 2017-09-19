@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:background="@drawable/shape"
+        android:id="@+id/pm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ems="12"
+        android:height="70sp"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:hint="PM2.5"/>
+    <TextView
+        android:id="@+id/sun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:ems="12"
+        android:height="70sp"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:hint="光照强度"
+        android:layout_above="@+id/pm"
+        android:layout_alignLeft="@+id/pm"
+        android:layout_alignStart="@+id/pm" />
+
+    <TextView
+        android:id="@+id/tem1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sun"
+        android:layout_toLeftOf="@+id/pm"
+        android:layout_toStartOf="@+id/pm"
+        android:height="70sp"
+        android:drawableTop="@mipmap/tem"
+        android:ems="12"
+        android:gravity="center"
+        android:hint="空气温度"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:height="70sp"
+        android:gravity="center"
+        android:drawableTop="@mipmap/wet"
+        android:textSize="25sp"
+        android:hint="空气湿度"
+        android:layout_above="@+id/pm"
+        android:layout_toRightOf="@+id/sun"
+        android:layout_toEndOf="@+id/sun"
+        android:layout_marginBottom="75dp" />
+
+    <TextView
+        android:id="@+id/soil1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pm"
+        android:layout_toRightOf="@+id/pm"
+        android:ems="12"
+        android:height="70sp"
+        android:gravity="center"
+        android:drawableTop="@mipmap/shifei1"
+        android:textSize="25sp"
+        android:hint="土壤肥力"/>
+
+    <TextView
+        android:id="@+id/soil2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pm"
+        android:layout_toLeftOf="@+id/pm"
+        android:ems="12"
+        android:height="70sp"
+        android:gravity="center"
+        android:drawableTop="@mipmap/guangai1"
+        android:textSize="25sp"
+        android:hint="土壤湿度"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+
+    </LinearLayout>
+</RelativeLayout>

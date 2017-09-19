@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+ 
+ 
+ 
+ <mapper namespace="com.daogukeji.dapeng.dao.OrderDAO_DiGuan">
+ 	
+ 	<insert id="addOrder_DiGuan" parameterType="com.daogukeji.dapeng.entity.Dapeng_1_Order_DiGuan">
+ 		INSERT INTO dapeng_1_order_diguan     (
+ 									diguan
+ 								)
+ 					VALUES(#{diguan})
+ 	</insert>
+ 	
+ 	<select id="findOrder_DiGuan" resultType="com.daogukeji.dapeng.entity.Dapeng_1_Order_DiGuan">
+ 		SELECT * FROM dapeng_1_order_diguan     WHERE id = (SELECT MAX(id) FROM dapeng_1_order_diguan    )
+ 	</select>
+ </mapper>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+ 
+ <mapper namespace="com.daogukeji.dapeng.dao.Status_led_DAO">
+ 	
+ 	<insert id="addStatus_led" parameterType="com.daogukeji.dapeng.entity.Dapeng_1_Status_Led">
+ 		INSERT INTO dapeng_1_status_led  (
+ 									state_led
+ 								)
+ 					VALUES(#{state_led})
+ 	</insert>
+ 	
+ 	<select id="findStatus_led" resultType="com.daogukeji.dapeng.entity.Dapeng_1_Status_Led">
+ 		SELECT * FROM dapeng_1_status_led   WHERE id = (SELECT MAX(id) FROM dapeng_1_status_led  )
+ 	</select>
+ </mapper>
+ 

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+ 
+ <mapper namespace="com.daogukeji.dapeng.dao.DapengDAO">
+ 
+ 	<insert id="addInfo" parameterType="com.daogukeji.dapeng.entity.Dapeng_1">
+ 		INSERT INTO dapeng_1 (
+ 								airTem,
+ 								airHum,
+ 								sun,
+ 								soilTem,
+ 								soilHum
+ 								)
+ 				VALUES (#{airTem},#{airHum},#{sun},#{soilTem},#{soilHum})
+ 	</insert>
+ 
+ 	
+ 	
+ 	<select	id="findAll" resultType="com.daogukeji.dapeng.entity.Dapeng_1">
+ 		SELECT * FROM dapeng_1 WHERE id = (SELECT MAX(id) FROM dapeng_1)
+ 	</select>
+ 
+ </mapper>
+ 

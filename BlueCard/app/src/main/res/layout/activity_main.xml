@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:id="@+id/device_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"/>
+        <TextView android:id="@+id/device_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <EditText
+        android:id="@+id/editText_Master_Key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Authentication Key"
+        android:textSize="30dp"
+        />
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="。。。"
+        android:textSize="30dp"
+        />
+    <TextView
+        android:id="@+id/atr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="ATR"
+        android:textSize="30dp"
+        />
+    <Button
+        android:id="@+id/auth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Authenticate" />
+
+    <Button
+        android:id="@+id/startpoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Polling" />
+
+    <Button
+        android:id="@+id/poweron"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Power on" />
+
+</LinearLayout>

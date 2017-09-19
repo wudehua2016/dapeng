@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView  android:id="@+id/text_bg" android:textColor="#80ccff"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:hint="请点击'开启'或'关闭'按钮"
+        android:ems="12"
+        android:height="70sp"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:background="#fff9e5"
+        android:layout_marginTop="92dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/bg_btn_open"
+        android:layout_width="400sp"
+        android:layout_height="wrap_content"
+        android:text="开启补光"
+        android:layout_below="@+id/text_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp" />
+    <Button
+        android:id="@+id/bg_btn_close"
+        android:layout_width="400sp"
+        android:layout_height="wrap_content"
+        android:text="关闭补光"
+        android:layout_below="@+id/bg_btn_open"
+        android:layout_alignLeft="@+id/bg_btn_open"
+        android:layout_alignStart="@+id/bg_btn_open"
+        android:layout_marginTop="40dp" />
+
+</RelativeLayout>
